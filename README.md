@@ -36,3 +36,15 @@ A full-stack, microservices-based **personalised trading platform** built with *
    ```bash
    git clone https://github.com/your-username/futures-trading-platform.git
    cd futures-trading-platform
+
+2. **Spin up services:**
+   ```bash
+   docker-compose up --build
+3. **Install dependencies for local dev (if needed)**
+   ```bash
+   pnpm install
+4. **Migrate Database**
+   ```pnpm --filter apps/server prisma migrate dev
+5. **Start Development**
+   ```bash
+   pnpm dev
